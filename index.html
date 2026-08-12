@@ -1,0 +1,378 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Education</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #173b7a;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #ffd166;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #e8f0ff, #ffffff);
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #173b7a;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6b35;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #e85b2a;
+        }
+
+        .hero-image {
+            width: 40%;
+            text-align: center;
+        }
+
+        .hero-image div {
+            font-size: 150px;
+        }
+
+        /* Courses */
+        .courses {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 34px;
+            color: #173b7a;
+            margin-bottom: 10px;
+        }
+
+        .courses > p {
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .course-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background-color: white;
+            width: 280px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .course-card .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            color: #173b7a;
+            margin-bottom: 12px;
+        }
+
+        .course-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Features */
+        .features {
+            background-color: #173b7a;
+            color: white;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 34px;
+            margin-bottom: 35px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 250px;
+        }
+
+        .feature h3 {
+            margin: 15px 0 10px;
+        }
+
+        .feature p {
+            line-height: 1.5;
+        }
+
+        .feature-icon {
+            font-size: 45px;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #173b7a;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #102c5d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text,
+            .hero-image {
+                width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-image {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">📚 EduLearn</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Learn Today, Lead Tomorrow</h1>
+
+            <p>
+                Welcome to EduLearn, an online education platform
+                designed to help students learn new skills, explore
+                exciting subjects, and build a successful future.
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+
+        <div class="hero-image">
+            <div>🎓</div>
+        </div>
+
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+
+        <h2>Popular Courses</h2>
+
+        <p>Learn valuable skills from our beginner-friendly courses.</p>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    Learn HTML, CSS and JavaScript and create
+                    beautiful websites from scratch.
+                </p>
+            </div>
+
+            <div class="course-card">
+                <div class="icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>
+                    Start programming with Python and develop
+                    problem-solving and coding skills.
+                </p>
+            </div>
+
+            <div class="course-card">
+                <div class="icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                    Explore AI and machine learning concepts
+                    through simple practical examples.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Why Choose EduLearn?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <div class="feature-icon">📖</div>
+                <h3>Quality Content</h3>
+                <p>
+                    Easy-to-understand learning materials
+                    designed for students.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">👨‍🏫</div>
+                <h3>Expert Teachers</h3>
+                <p>
+                    Learn from experienced instructors
+                    and industry professionals.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h3>Build Your Skills</h3>
+                <p>
+                    Practice your skills and prepare yourself
+                    for future career opportunities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Start Learning Today</h2>
+
+        <p>
+            Take the first step toward building your future
+            with EduLearn.
+        </p>
+
+        <a href="mailto:edulearn@example.com" class="btn">
+            Contact Us
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 EduLearn. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
